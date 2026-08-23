@@ -1,0 +1,33 @@
+.logo-footer {
+    width: 240px;
+}
+
+.footer-text-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/bg_footer_m.png?raw=true");
+  background-repeat: no-repeat;
+  // background-size: 997px 709px;
+  // background-position: -272px top;
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.footer-link {
+  width: 150px;
+}
+
+.social {
+  width: 18px;
+  height: 18px;
+}
+
+// 因手機版圖片提供的大小約465px 故設在這個尺寸 原先設992
+@media (min-width:465px) {
+  .footer-text-bg {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/bg_footer.png?raw=true");
+    padding-top: 120px;
+  }
+
+  .footer-link {
+    width: auto;
+  }
+}

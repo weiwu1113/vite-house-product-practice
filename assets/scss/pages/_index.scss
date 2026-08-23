@@ -1,0 +1,169 @@
+.banner {
+  min-height: 100vh;
+  background-image: url("/assets/images/index-m_Hero\ Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/bg_stone.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: 820px 734px;
+  background-position: -272px bottom;
+  padding-top: 72px;
+  padding-bottom: 45px;
+}
+
+.banner-text {
+  max-width: 320px;
+}
+
+.glass-bg {
+  background-color: $gray-100; 
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+/* 外層容器開啟相對定位 */
+.input-icon-wrapper {
+  position: relative;
+}
+
+/* 圖示定位在輸入框內部左側 */
+.input-icon-wrapper .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* 讓點擊圖示時能順利壓穿並打開選單 */
+  z-index: 2;
+  font-size: 20px;
+  color: $primary;
+}
+
+/* 下拉選單增加左側內邊距，避免文字疊在圖示上 */
+.custom-select {
+  padding-left: 40px !important;
+}
+
+.feature {
+  .icon-bg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .feature-item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  .col {
+    &:nth-child(1) .feature-item::before {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/display2.png?raw=true");
+      top: -51px;
+      bottom: -51px;
+    }
+    &:nth-child(2) .feature-item::before {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/display3.png?raw=true");
+      top: -48px;
+      bottom: -49px;
+    }
+    &:nth-child(3) .feature-item::before {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/display4.png?raw=true");
+      top: -32px;
+      bottom: -27px;
+    }
+    &:nth-child(4) .feature-item::before {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/display5.png?raw=true");
+      top: -24px;
+      bottom: -25px;
+    }
+  }
+
+  .feature-content {
+    max-width: 279px;
+  }
+}
+
+
+
+// .tool-icon-wrap {
+//   width: 60px;
+//   height: 60px;
+// }
+
+@media (min-width:992px) {
+  .banner {
+    background-image: url("/assets/images/index-hero-Image.png");
+  } 
+  
+  .banner-text-bg {
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2026-week8/bg.png");
+    background-size: 964px 766px;
+    background-position: -104px bottom;
+    padding-bottom: 168px;
+  }
+
+  .banner-text {
+    max-width: 480px;
+  }
+
+  .feature .col {
+    &:nth-child(1),
+    &:nth-child(2) {
+      .feature-item::before {
+        top: -35px;
+        bottom: -35px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+    &:nth-child(3) {
+      .feature-item::before {
+        top: -18px;
+        bottom: -12px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+    &:nth-child(4) {
+      .feature-item::before {
+        top: -20px;
+        bottom: -20px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+  }
+
+  .tool-mask {
+    aspect-ratio: 1; //寬高比 讓他維持正方形
+    background-image: url("/assets/images/img_tool.png");
+    background-attachment: fixed;
+    background-size: auto 100%; //寬度依照比例  高度填滿視窗的高度
+    background-position: calc(50% - 330px) center;
+    background-repeat: no-repeat;
+
+    mask-image: url("/assets/images/mask.png");
+    mask-size: contain;
+    mask-position: center top;
+    mask-repeat: no-repeat;
+  }
+}
+
+.tool-mask {
+  mask-image: url("/assets/images/mask.png");
+    mask-size: contain;
+    mask-position: center top;
+    mask-repeat: no-repeat;
+}
