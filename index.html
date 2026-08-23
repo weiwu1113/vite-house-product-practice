@@ -10,10 +10,10 @@
     <title>index</title>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <script type="module" crossorigin src="/vite-house-product-practice/assets/main-Bpf4yZhI.js"></script>
+    <script type="module" crossorigin src="/vite-house-product-practice/assets/main-DrxSpV2w.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <link rel="stylesheet" crossorigin href="/vite-house-product-practice/assets/main-BcsgE5S4.css">
+    <link rel="stylesheet" crossorigin href="/vite-house-product-practice/assets/main-ByooNfh8.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg  sticky-top py-lg-5">
@@ -62,12 +62,13 @@
         </div>
       </section>
       <!-- 搜尋房源 -->
-       <div class="container mt-5">
-        <form class="bg-white glass-bg">
-        <div class="d-flex flex-column p-5">
+       <!-- 手機版 -->
+       <div class="container mt-5 d-lg-none">
+        <form class="bg-gray-100 glass-bg">
+        <div class="d-lg-flex p-5 ">
           <!-- 地區 -->
-          <div class="d-flex text-primary-dark align-items-center">       
-            <label class="form-label me-10">地區</label>
+          <div class="d-flex text-primary-dark align-items-center mb-7">       
+            <label class="form-label option">地區</label>
             <div class="input-icon-wrapper position-relative flex-grow-1">
               <span class="material-symbols-outlined icon">location_on</span>
               <select class="form-select custom-select">
@@ -78,8 +79,8 @@
             </div>
           </div>
           <!-- 房型 -->
-          <div class="d-flex text-primary-dark align-items-center">       
-            <label class="form-label me-10">房型</label>
+          <div class="d-flex text-primary-dark align-items-center mb-7">       
+            <label class="form-label  option">房型</label>
             <div class="input-icon-wrapper position-relative flex-grow-1">
               <span class="material-symbols-outlined icon">home</span>
               <select class="form-select custom-select">
@@ -90,8 +91,8 @@
             </div>
           </div>
           <!-- 房間數 -->
-          <div class="d-flex text-primary-dark align-items-center">       
-            <label class="form-label me-10">房間數</label>
+          <div class="d-flex text-primary-dark align-items-center mb-7">       
+            <label class="form-label  option">房間數</label>
             <div class="input-icon-wrapper position-relative flex-grow-1">
               <span class="material-symbols-outlined icon">bed</span>
               <select class="form-select custom-select">
@@ -102,8 +103,8 @@
             </div>
           </div>
           <!-- 價格 -->
-           <div class="d-flex text-primary-dark align-items-center">       
-            <label class="form-label me-10">價格</label>
+          <div class="d-flex text-primary-dark align-items-center mb-7">       
+            <label class="form-label  option">價格</label>
             <div class="input-icon-wrapper position-relative flex-grow-1">
               <span class="material-symbols-outlined icon">attach_money</span>
               <select class="form-select custom-select">
@@ -112,17 +113,74 @@
                 <option value="2">1,000 ~ 2,000 萬</option>
               </select>
             </div>
-
-
-    <!-- 搜尋按鈕 -->
-    <div class="filter-item filter-btn-item">
-      <button type="submit" class="btn btn-search">
-        搜尋房源 <i class="bi bi-search ms-2"></i>
-      </button>
-    </div>
+          </div>
+          <!-- 搜尋按鈕 -->
+          <button type="button" class="btn btn-primary btn-standard fw-bold w-100 rounded-3">
+            搜尋房源<span class="material-symbols-outlined">search</span>
+          </button>    
         </div>
-</form>
+        </form>
        </div>
+       <!-- 電腦版 -->
+        <div class="search-desktop">
+          <form class="bg-gray-100 glass-bg d-none d-lg-block">
+        <div class="d-lg-flex p-5 py-lg-7 ps-lg-14 pe-lg-10 gap-lg-7 align-items-center">
+          <!-- 地區 -->
+          <div class="d-flex text-primary-dark align-items-center mb-7 flex-lg-column">       
+            <label class="form-label option">地區</label>
+            <div class="input-icon-wrapper position-relative flex-grow-1 search-item">
+              <span class="material-symbols-outlined icon">location_on</span>
+              <select class="form-select custom-select">
+                <option selected disabled> 請選擇地區</option>
+                <option value="taipei">台北市</option>
+                <option value="new-taipei">新北市</option>
+              </select>
+            </div>
+          </div>
+          <!-- 房型 -->
+          <div class="d-flex text-primary-dark align-items-center mb-7 flex-lg-column">       
+            <label class="form-label  option">房型</label>
+            <div class="input-icon-wrapper position-relative flex-grow-1 search-item">
+              <span class="material-symbols-outlined icon">home</span>
+              <select class="form-select custom-select">
+                <option selected disabled> 請選擇房型</option>
+                <option value="apartment">公寓</option>
+                <option value="elevator">電梯大樓</option>
+              </select>
+            </div>
+          </div>
+          <!-- 房間數 -->
+          <div class="d-flex text-primary-dark align-items-center mb-7 flex-lg-column">       
+            <label class="form-label  option">房間數</label>
+            <div class="input-icon-wrapper position-relative flex-grow-1 search-item">
+              <span class="material-symbols-outlined icon">bed</span>
+              <select class="form-select custom-select">
+                <option selected disabled> 請選擇房間數</option>
+                <option value="1">1 房</option>
+                <option value="2">2 房</option>
+              </select>
+            </div>
+          </div>
+          <!-- 價格 -->
+          <div class="d-flex text-primary-dark align-items-center mb-7 flex-lg-column">       
+            <label class="form-label  option">價格</label>
+            <div class="input-icon-wrapper position-relative flex-grow-1 search-item">
+              <span class="material-symbols-outlined icon">attach_money</span>
+              <select class="form-select custom-select">
+                <option selected disabled> 請選擇價格區間</option>
+                <option value="1">1,000 萬以下</option>
+                <option value="2">1,000 ~ 2,000 萬</option>
+              </select>
+            </div>
+          </div>
+          <!-- 搜尋按鈕 -->
+          <button type="button" class="btn btn-primary btn-standard fw-bold w-100 rounded-3 search-item">
+            搜尋房源<span class="material-symbols-outlined">search</span>
+          </button>    
+        </div>
+        </form>
+        </div>
+        
        
       <!-- 為甚麼選擇我們 -->
       <section class="container py-11 py-lg-18">
