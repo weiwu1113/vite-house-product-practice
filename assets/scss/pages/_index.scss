@@ -1,8 +1,9 @@
 .banner {
   min-height: 100vh;
-  background-image: url("/assets/images/index-m_Hero\ Image.png");
+  background-image: url("/assets/images/m_Hero\ Image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  // background-size: 100% auto;
   background-position: center;
 }
 
@@ -177,6 +178,95 @@
     mask-repeat: no-repeat;
 }
 
+.choose-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-week8/display1.png?raw=true");
+  background-size: 176px 138px;
+  background-position: -36px 20px;
+  // padding-top: 28px;
+  background-repeat: no-repeat;
+}
+.house-img-more {
+  width: 100%;
+  // height: auto;
+  // min-width: 343px;
+  height: 207px;
+  border-radius: 24px;
+}
+
+.house-img {
+  width: 100%;
+  // height: auto;
+  // min-width: 343px;
+  height: 207px;
+  border-radius: 24px;
+}
+
+.house-link {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.house-content {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+}
+
+.house-btn {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 2;
+}
+
+.house-more {
+  position: absolute;
+  bottom: 48px;
+  right: 60px;
+  z-index: 2;
+}
+.house-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#232E1A33,#232E1AB2) ;
+  // width: 100%;
+  max-height: 600px;
+  border-radius: 24px;
+}
+
+.house-label {
+  background-color: $white;
+  color: $primary-dark;
+  border-radius: 999px;
+  right: 16px;
+  bottom: 17px;
+  line-height: 1.6;
+  padding: 4px 20px;
+}
+
+.house-badge {
+  background-color: $gray-100;
+  border: 1px solid $primary-light;
+  border-radius: 999px;
+  padding: 9px 20px;
+}
+
+// 進度條樣式
+.custom-progress {
+  height: 4px;
+  max-width: 916px;
+  background-color: $gray-200;
+
+  .custom-progress-bar {
+    width: 30%; // 預設 30%，後續可透過 JS 動態控制
+    background-color: $secondary;
+    transition: width 0.2s ease;
+  }
+}
+
+
 @media (min-width:992px) {
   .search-desktop {
     max-width: 1278px;
@@ -184,4 +274,35 @@
     position: relative;
     z-index: 10;        /* 確保浮在 Banner 上方不被遮住 */
   }
+  
+  .choose-bg {
+    background-size: 280px 220px;
+    background-position: 154px 70px;
+    
+  }
+
+ .house-img-more {
+  max-width: 688px;
+  height: 600px;
+  }
+
+  .house-img {
+  max-width: 100%;
+  height: 267px;
+  }
+
+  .house-btn {
+  top: 194px;
+  left: 60px;
+  z-index: 2;
+  }
+
+  .house-content {
+  top: 48px;
+  left: 60px;
+  z-index: 2;
+  }
+
 }
+
+

@@ -454,10 +454,10 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer * 0.625,
-  4: $spacer * 0.75,
+  1: $spacer * 0.25,   //4
+  2: $spacer * 0.5,    //8
+  3: $spacer * 0.625,  //10
+  4: $spacer * 0.75,  //12
   5: $spacer * 1,
   6: $spacer * 1.25,  //20
   7: $spacer * 1.50,  //24
@@ -475,6 +475,7 @@ $spacers: (
   19: $spacer * 12.5,
   20: $spacer * 13.75,
   21: $spacer * 5.5,
+  22: $spacer * 2.25,
 
   // 0: 0,
   // 1: $spacer * .25,
@@ -714,9 +715,9 @@ $h6-font-size:                $font-size-base * 1.25 !default;
 
 $h1-m-font-size:                $font-size-base * 2.5 !default;
 $h2-m-font-size:                $font-size-base * 2.25 !default;
-$h3-m-font-size:                $font-size-base * 1.75 !default;
-$h4-m-font-size:                $font-size-base * 1.5 !default;
-$h5-m-font-size:                $font-size-base * 1.25 !default;
+$h3-m-font-size:                $font-size-base * 1.75 !default;  //28
+$h4-m-font-size:                $font-size-base * 1.5 !default;   //24
+$h5-m-font-size:                $font-size-base * 1.25 !default;  //20
 $h6-m-font-size:                $font-size-base * 1.125 !default;
 
 $sm-font-size:                $font-size-base * 0.875 !default;
