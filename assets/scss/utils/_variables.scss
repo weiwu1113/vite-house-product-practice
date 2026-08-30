@@ -462,20 +462,23 @@ $spacers: (
   6: $spacer * 1.25,  //20
   7: $spacer * 1.50,  //24
   8: $spacer * 1.75,
-  9: $spacer * 2,
+  9: $spacer * 2,     //32
   10: $spacer * 2.5,  //40
   11: $spacer * 3,   //48
   12: $spacer * 3.25,
-  13: $spacer * 3.75,
+  13: $spacer * 3.75,  //60
   14: $spacer * 4,   //64
   15: $spacer * 5,   //80
   16: $spacer * 6.25,
   17: $spacer * 7.5,
   18: $spacer * 10,
   19: $spacer * 12.5,
-  20: $spacer * 13.75,
+  20: $spacer * 13.75,  //220
   21: $spacer * 5.5,
   22: $spacer * 2.25,
+  23: $spacer * 4.375,  //70
+  24: $spacer * 0.125,  //2
+
 
   // 0: 0,
   // 1: $spacer * .25,
