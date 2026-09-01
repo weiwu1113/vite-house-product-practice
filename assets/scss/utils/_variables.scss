@@ -470,14 +470,15 @@ $spacers: (
   14: $spacer * 4,   //64
   15: $spacer * 5,   //80
   16: $spacer * 6.25,
-  17: $spacer * 7.5,
-  18: $spacer * 10,
+  17: $spacer * 7.5,  //120
+  18: $spacer * 10,    //160
   19: $spacer * 12.5,
   20: $spacer * 13.75,  //220
   21: $spacer * 5.5,
   22: $spacer * 2.25,
   23: $spacer * 4.375,  //70
   24: $spacer * 0.125,  //2
+  25: $spacer * 10.25,  //164
 
 
   // 0: 0,
@@ -710,14 +711,14 @@ $line-height-lg:              2 !default;
 // $h6-font-size:                $font-size-base !default;
 
 $h1-font-size:                $font-size-base * 3.75 !default;
-$h2-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * 3 !default;       //48
 $h3-font-size:                $font-size-base * 2.5 !default;
 $h4-font-size:                $font-size-base * 2 !default;
 $h5-font-size:                $font-size-base * 1.5 !default;
 $h6-font-size:                $font-size-base * 1.25 !default;
 
 $h1-m-font-size:                $font-size-base * 2.5 !default;
-$h2-m-font-size:                $font-size-base * 2.25 !default;
+$h2-m-font-size:                $font-size-base * 2.25 !default;   //36
 $h3-m-font-size:                $font-size-base * 1.75 !default;  //28
 $h4-m-font-size:                $font-size-base * 1.5 !default;   //24
 $h5-m-font-size:                $font-size-base * 1.25 !default;  //20
